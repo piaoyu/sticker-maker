@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState } from "react"; 
 import Head from "next/head";
 import Image from "next/image";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-export default function Home() {
+export default function Home() { 
   const [prediction, setPrediction] = useState(null);
   const [error, setError] = useState(null);
 
@@ -19,7 +19,7 @@ export default function Home() {
         prompt: e.target.prompt.value,
       }),
     });
-    let prediction = await response.json();
+    let prediction = await response.json(); 
     if (response.status !== 201) {
       setError(prediction.detail);
       return;
@@ -45,17 +45,20 @@ export default function Home() {
   return (
     <div className="container max-w-2xl mx-auto p-5">
       <Head>
-        <title>Replicate + Next.js</title>
+        <title>Sticker Maker</title> 
       </Head>
 
-      <h1 className="py-6 text-center font-bold text-2xl">
-        Dream something with{" "}
-        <a href="https://replicate.com/stability-ai/sdxl?utm_source=project&utm_project=getting-started">
-          SDXL
+      <h1 className="py-6 text-center font-bold text-2xl"> 
+        Dream Sticker with{" "} 
+        <a href="https://replicate.com/fofr/sticker-maker"> 
+         Sticker Maker 
         </a>
       </h1>
+      <h2 className="py-6 text-center font-bold text-xl">  
+          credits to <a href="https://github.com/fofr">fofr</a> and <a href="https://replicate.com/">Replicate</a>
+      </h2>     
 
-      <form className="w-full flex" onSubmit={handleSubmit}>
+      <form className="w-full flex" onSubmit={handleSubmit}> 
         <input
           type="text"
           className="flex-grow"

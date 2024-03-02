@@ -48,13 +48,13 @@ export default function Home() { 
         <title>Sticker Maker</title> 
       </Head>
 
-      <h1 className="py-6 text-center font-bold text-2xl"> 
+      <h1 className="py-3 text-center font-bold text-2xl"> 
         Dream Sticker with
         <a href="https://replicate.com/fofr/sticker-maker">  
          Sticker Maker  
         </a>
       </h1>
-      <h2 className="py-6 text-center font-bold text-xl">  
+      <h2 className="py-3 text-center font-bold text-xl">  
           credits to <a href="https://github.com/fofr">fofr</a> and <a href="https://replicate.com/">replicate</a>  
       </h2>     
 
